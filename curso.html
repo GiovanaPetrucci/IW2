@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Plataforma de Cursos Online</title>
+</head>
+<body>
+     <!-- Cabeçalho -->
+     <nav class="navbar navbar-expand">
+      <img src="img/logo.png" height="85px" alt="Logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categorias
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">TI e Software</a>
+                      <a class="dropdown-item" href="#">Desenvolvimento</a>
+                      <a class="dropdown-item" href="#">Design</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+              <button type="button" class="btn btn-warning">Pesquisar</button>
+          </form>
+      </div>
+  </nav>
+
+  <!-- Container principal -->
+  <div class="container my-5">
+      <div class="row">
+          <!-- Imagem ao lado do texto de descrição -->
+          <div class="col-md-6">
+              <div class="img1">
+                  <img src="img/bd.jpg" class="img-fluid" alt="Imagem do curso">
+              </div>
+          </div>
+          <div class="col-md-6">
+              <!-- Descrição do curso -->
+              <h1>Curso de Banco de Dados</h1>
+              <br>
+              <p><strong>Descrição:</strong> O curso de Banco de Dados desenvolve habilidades em modelagem, manipulação, coleta, limpeza, processamento e visualização de dados, além de técnicas de aprendizado de máquina, segurança e governança. A graduação prepara alunos para carreiras em análise de dados, ciência de dados e administração de bancos de dados, contribuindo para a tomada de decisões e transformação digital nas organizações.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Seção de compra -->
+  <div class="container">
+      <center><h3>Comprar Curso</h3></center>
+      <br>
+      <h4>Valor total: R$157,89</h4>
+      <br>
+
+      <!-- Formulário -->
+      <form id="formularioCompra">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" class="form-control" id="name" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail3">Email:</label>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+        </div>
+        <fieldset class="form-group">
+            <legend>Métodos de Pagamento:</legend>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPagamento" id="gridRadios1" value="credito" checked>
+                <label class="form-check-label" for="gridRadios1">Cartão de Crédito</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="metodoPagamento" id="gridRadios2" value="debito">
+                <label class="form-check-label" for="gridRadios2">Cartão de Débito</label>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <label for="parcelas">Parcelas:</label>
+            <select class="form-control" id="parcelas" required>
+                <option>Selecione as Parcelas</option>
+                <option value="2">2X de R$78,94</option>
+                <option value="3">3X de R$52,63</option>
+                <option value="4">4x de R$39,47</option>
+                <option value="5">5x de R$31,57</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-warning btn-block">Comprar</button>
+        </div>
+    </form>
+
+
+    <script src="curso.js"></script>
+
+    
+</body>
+</html>

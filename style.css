@@ -1,0 +1,111 @@
+.navbar {
+    background-color: rgb(133, 22, 253);
+    height: 110px;
+}
+
+.card-img-top {
+    width: 500px;
+    height: 300px;
+}
+
+.card-deck{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h3{
+    padding-left: 20px;
+}
+
+.navbar-brand{
+    color:white
+}
+
+.nav-link{
+    color:white 
+}
+
+.max-width-100 {
+    max-width: 100%;
+}
+
+/* style_contato.css */
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#container_a,
+#container_b {
+    max-width: 600px;
+    width: 100%;
+    padding: 15px;
+}
+
+#container_b {
+    margin-top: 20px;
+}
+
+.form-group {
+    text-align: left;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container h1 {
+    font-size: 2em;
+}
+
+.container p {
+    font-size: 1.2em;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .form,
+    .form-check,
+    .ls-custom-select,
+    h4,
+    .parcelas {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
